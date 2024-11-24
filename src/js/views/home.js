@@ -1,15 +1,30 @@
-import React from "react";
+import React, { useContext } from "react";
 import rigoImage from "../../img/rigo-baby.jpg";
 import "../../styles/home.css";
+import { Context } from "../store/appContext";
+import { Tarjeta } from "../component/tarjeta.jsx";
 
-export const Home = () => (
-	<div className="text-center mt-5">
-		<h1>Hello Rigo!</h1>
-		<p>
+export const Home = () => {
+	const { store, actions } = useContext(Context)
+
+	return (
+		<div className="text-center mt-5">
+
 			<img src={rigoImage} />
-		</p>
-		<a href="#" className="btn btn-success">
-			If you see this green button, bootstrap is working
-		</a>
-	</div>
-);
+
+			<div className="container d-flex justify-content-around mt-5">
+			
+
+				{store.contacts?.map(elem => <Tarjeta key={elem.id}
+					name={elem.name}
+					phone={elem.phone}
+					email={elem.email}
+					address={elem.address}
+					userId={elem.id}
+					/>)}
+
+				
+			</div>
+		</div>
+	)
+}
