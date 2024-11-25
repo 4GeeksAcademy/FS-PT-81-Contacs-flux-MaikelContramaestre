@@ -21,7 +21,7 @@ export const Tarjeta = props => {
 
     return (
         <>
-            <div className="container-fluid">
+            <div className="container-fluid text-center mt-5">
                 <div className="card text-center mx-2" style={{ width: '18rem' }}>
                     <img src="https://www.webiconio.com/_upload/255/image_255.svg" className="card-img-top" alt={props.name} />
                     <div className="card-body">

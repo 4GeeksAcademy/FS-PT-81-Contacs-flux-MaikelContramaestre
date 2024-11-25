@@ -28,7 +28,7 @@ const handleCancel=()=> navigate('/')
      
     return(
         <>
-        <div className="container">
+        <div className="container text-center mt-5">
             <form className=" card form-control d-flex mb-2" style= {{width:'30rem', height: '25rem'}} onSubmit={handleSubmit}>
                <h3 className=" card-text mb-4 ">Agrega un Contacto</h3>
                 <input className="form-control mb-2" type="text" placeholder="nombre" value={userData.name} onChange={handleChange}  name="name" required/>

@@ -4,7 +4,7 @@ import { Edition } from "../component/edicionFomulario.jsx";
 export const PagEdicion = () =>{
 
     return(
-        <div className="container-md mt-4">
+        <div className="container-md text-center mt-5">
             <Edition/>
         </div>
     )
