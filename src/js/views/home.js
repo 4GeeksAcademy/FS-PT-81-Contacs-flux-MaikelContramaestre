@@ -11,7 +11,9 @@ export const Home = () => {
 		<div className="text-center mt-5">
 
 			<img src={rigoImage} />
-
+			<div className="text-card m-3">
+				<h3>Lista de contactos</h3>
+			</div>
 			<div className="container d-flex justify-content-around mt-5">
 			
 
