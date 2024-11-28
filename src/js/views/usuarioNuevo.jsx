@@ -5,12 +5,7 @@ import { Context } from "../store/appContext";
 export const UsuarioNuevo = () => {
     const { store, actions } = useContext(Context)
 
-    return (
-        <>
-        <div className="container-md mt-4">
+    return ( 
             <Card />
-        </div>
-
-        </>
     )
 }
